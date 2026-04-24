@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #0d1117;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+.board {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.column {
+  background: #161b22;
+  border-radius: 12px;
+  padding: 15px;
+  width: 300px;
+  min-height: 400px;
+}
+
+.column h2 {
+  text-align: center;
+}
+
+.task {
+  background: #21262d;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  position: relative;
+  transition: 0.2s;
+}
+
+.task:hover {
+  transform: translateY(-3px);
+}
+
+.priority-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 6px;
+  border-radius: 10px 0 0 10px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.badge {
+  padding: 3px 8px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.search {
+  display: block;
+  margin: 10px auto;
+  padding: 8px;
+  width: 250px;
+  border-radius: 8px;
+  border: none;
+}
+
+.toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #238636;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  animation: fadeInOut 2s ease;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(20px); }
+  20% { opacity: 1; transform: translateY(0); }
+  80% { opacity: 1; }
+  100% { opacity: 0; }
+}
