@@ -53,9 +53,6 @@ index.css
 npm install
 npm run dev
 
-3. Open browser:
-   http://localhost:5173
-
 ---
 
 ## 🧠 How it Works
@@ -84,8 +81,7 @@ npm run dev
 ## 👨‍💻 Author
 
 Aryan
-B.Tech CSE
-Aravali College of Engineering and Management
+https://github.com/ARYAN-WEBDEVELOPER
 
 ---
 
